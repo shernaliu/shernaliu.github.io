@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Maxine's Accessories</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<!--Load jQuery & jQuery UI for display effects (Hamburger)-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<!--Load Hamburger JS for Hamburger menu-->
+<script src="hamburger.js"></script>
+
+<!--Load CSS-->
+<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="ResponsiveSlides.js-master/responsiveslides.css">
+</head>
+<body>
+<!--This container is used to wrap & obtain width of the entire content-->
+<div id="container"> 
+  <!--Header has the Mobile Navigation (Hamburger) logo, logotext, logo image, and hidden Mobile Nav-->
+  <header>
+    <div class="hamburgerlogo">
+      <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+    <!--The text "Maxine's" will appear only in mobile size --> 
+    <a href="index.html">
+    <div class="logotext">
+      <h2>Maxine's</h2>
+    </div>
+    </a> 
+    
+    <!-- Logo Image and Desktop nav will disappear in mobile size -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="img" alt="logo"></a> </div>
+    
+    <!--Desktop Nav bar-->
+    <ul class="nav">
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </header>
+  
+  <!--Mobile navigation hidden-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </nav>
+  
+  <!--contentLayer is layed over the content, in order to make content unclickable while mobile nav is displayed-->
+  <div id="contentLayer"></div>
+  
+  <!--Site Content starts here-->
+  <div id="content"> 
+    <!--placeholder-->
+    <section class="placeholder">
+      <h6>.</h6>
+    </section>
+    <section class="main">
+      <div class="infobox guideinfo">
+        <h2>1. Less is always More</h2>
+        <br>
+        <p>Piling a bunch of accessorise on you body with no focus on your definite style is a no-no. Our fashion advisor, Ms Lynn Koh advises to choose a 1 or 2 accesories that accentuate your outfit the best or emphasise a feature you would want.</p>
+        <br>
+        <p>What we're saying is wearing a full set of jewlery (earrings, necklaces, bracelets and rings) all at once is too much. Try adorning either a necklace or just earrings and it would look nicer.</p>
+      </div>
+      <br>
+      <div class="infobox guideinfo">
+        <h2>2. Don't be so matchy</h2>
+        <br>
+        <p>Sure, having things that matches each other and being equally balance is a good thing, right?</p>
+        <br>
+        <p>It might not be the case all the time! For example, wearing blue earrings, blue necklace, blue outfit and blue shoes. Not only is there no variation and contrast, it might look out-of-fashion and child-like.</p>
+        <br>
+        <p>We recommend using the color wheel to find complementary colours. For example, for black coloured outfits, try to pair it with something bright, for example gold coloured necklace.</p>
+        <br>
+        <p>Take a step back and look at the mirror and use your judgement to see if it looks good on your outfit.</p>
+      </div>
+      <br>
+      <div class="infobox guideinfo">
+        <h2>3. Play up to your Features</h2>
+        <br>
+        <p>Accessories can help to highlight a desirable feature on your face and body.</p>
+        <br>
+        <p>For example:</p>
+        <p>A long linear earring can elongate your face shape.</p>
+        <p>A rounded design earring can make your face look rounder and cuter.</p>
+        <p>Asymmetric earrings can look fun and interesting too!</p>
+      </div>
+    </section>
+    
+    <!--Footer Section-->
+    <footer>
+      <p>Follow us on social media</p>
+      <ul id="footerlist">
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="images/fbicon.png" alt="Facebook icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/communities/107656639828163320669" target="_blank"><img class="socialmedia" src="images/googleplusicon.png" alt="Googlepls Icon"></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img class="socialmedia" src="images/instagramicon.png" alt="Instagram Icon"></a></li>
+      </ul>
+    </footer>
+    <!--Closing div tag for content--> 
+  </div>
+  <!--Closing div tag for container--> 
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Maxine's Accessories</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+
+	<!--Load jQuery & jQuery UI for display effects (Hamburger)-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+	<!--Load Hamburger JS for Hamburger menu-->
+	<script src="hamburger.js"></script>
+
+	<!--Load CSS, ResponsiveSlides CSS & JS-->
+	<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css"/>
+	<link rel="stylesheet" type="text/css" href="ResponsiveSlides.js-master/responsiveslides.css">
+	<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+
+	<!--JS Customization ResponsiveSlides-->
+	<script>
+  	$(function() {
+    	$(".rslides").responsiveSlides({
+			speed: 400,
+			timeout: 4000, 
+        	pager: true,
+        	namespace: "centered-btns"});
+  	});
+	</script>
+	</head>
+
+	<body>
+<!--This container is used to wrap & obtain width of the entire content-->
+<div id="container"> 
+      <!--Header has the Mobile Navigation (Hamburger) logo, logotext, logo image, and hidden Mobile Nav-->
+      <header>
+    <div class="hamburgerlogo">
+          <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+        </div>
+    
+    <!--The text "Maxine's" will appear only in mobile size --> 
+    <a href="index.html">
+        <div class="logotext">
+      <h2>Maxine's</h2>
+    </div>
+        </a> 
+    
+    <!-- Logo Image and Desktop nav will disappear in mobile size -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="img" alt="logo"></a> </div>
+    
+    <!--Desktop Nav bar-->
+    <ul class="nav">
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Guide.html">Accessoring Guide</a></li>
+        </ul>
+  </header>
+      
+      <!--Mobile navigation hidden-->
+      <nav>
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Guide.html">Accessoring Guide</a></li>
+        </ul>
+  </nav>
+      
+      <!--contentLayer is layed over the content, in order to make content unclickable while mobile nav is displayed-->
+      <div id="contentLayer"></div>
+      
+      <!--Site Content starts here-->
+      <div id="content"> 
+    <!--placeholder-->
+    <section class="placeholder">
+          <h6>.</h6>
+        </section>
+    
+    <!--Responsive Slider Images-->
+    <ul class="rslides">
+          <li><img src="images/slideshowimage1.png" width="800" height="400" alt="Slideshow Image 1"/></li>
+          <li><img src="images/slideshowimage2.png" width="800" height="400" alt=""/></li>
+          <li><img src="images/slideshowimage3.png" width="800" height="400" alt=""/></li>
+        </ul>
+    
+    <!--section to wrap the 3 asides-->
+    <section class="main">
+          <h1>Welcome to Maxine's Accessories</h1>
+          <aside>
+        <div class="content shop">
+              <h2>SHOP</h2>
+              <p>Maxine's Accessories has a wide variety of products that fits your accessorising needs. You will be spoilt for choices. Come check out our shop!</p>
+              <input type="button" class="btn indexbtn" value="Shop" onclick="window.open('Shop.html')" />
+            </div>
+      </aside>
+          <aside>
+        <div class="content box">
+              <h2>MAXINE'S BOX</h2>
+              <p>Maxine's Box is a monthly surprise at your doorstep! We promise you will have the latest trending fashion accessories in every box. Get your box now.</p>
+              <input type="button" class="btn indexbtn" value="Subscribe" onclick="window.open('MaxinesBox.html')" />
+            </div>
+      </aside>
+          <aside>
+        <div class="content guide">
+              <h2>GUIDE TO ACCESSORISING</h2>
+              <p>Having headaches when matching accessories with outfits? Fret not! We want to make accessorising fun and easy. Check out this guide to learn more!</p>
+              <input type="button" class="btn indexbtn" value="Guide Me" onclick="window.open('Guide.html')" />
+            </div>
+      </aside>
+        </section>
+    
+    <!--Footer Section-->
+    <footer>
+          <p>Follow us on social media</p>
+          <ul id="footerlist">
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="images/fbicon.png" alt="Facebook icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/communities/107656639828163320669" target="_blank"><img class="socialmedia" src="images/googleplusicon.png" alt="Googlepls Icon"></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img class="socialmedia" src="images/instagramicon.png" alt="Instagram Icon"></a></li>
+      </ul>
+        </footer>
+    <!--Closing div tag for content--> 
+  </div>
+      <!--Closing div tag for container--> 
+    </div>
+</body>
+</html>

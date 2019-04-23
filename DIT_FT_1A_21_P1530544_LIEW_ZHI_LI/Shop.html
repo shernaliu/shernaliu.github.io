@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Maxine's Accessories</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<!--Load jQuery & jQuery UI for display effects (Hamburger)-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<!--Load Hamburger JS for Hamburger menu-->
+<script src="hamburger.js"></script>
+
+<!--Load CSS, LightBox CSS & JS (JS is loaded before the closing body tag)-->
+<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="ResponsiveSlides.js-master/responsiveslides.css">
+<link rel="stylesheet" type="text/css" href="lightbox2-master/dist/css/lightbox.css">
+
+<body>
+<!--This container is used to wrap & obtain width of the entire content-->
+<div id="container"> 
+  <!--Header has the Mobile Navigation (Hamburger) logo, logotext, logo image, and hidden Mobile Nav-->
+  <header>
+    <div class="hamburgerlogo">
+      <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+    <!--The text "Maxine's" will appear only in mobile size --> 
+    <a href="index.html">
+    <div class="logotext">
+      <h2>Maxine's</h2>
+    </div>
+    </a> 
+    
+    <!-- Logo Image and Desktop nav will disappear in mobile size -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="img" alt="logo"></a> </div>
+    
+    <!--Desktop Nav bar-->
+    <ul class="nav">
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </header>
+  
+  <!--Mobile navigation hidden-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </nav>
+  
+  <!--contentLayer is layed over the content, in order to make content unclickable while mobile nav is displayed-->
+  <div id="contentLayer"></div>
+  
+  <!--Site Content starts here-->
+  <div id="content"> 
+    <!--placeholder-->
+    <section class="placeholder">
+      <h6>.</h6>
+    </section>
+    <section class="shop">
+      <h1>EARRINGS</h1>
+      <div class="shopbox"> <a href="images/product/E-1.jpg" data-lightbox="earring" data-title="Butterfly Earring"><img src="images/product/Earring1.png" width="200" height="200" alt="Butterfly Earring"/></a>
+        <p id="type1">EARRING</p>
+        <h3 id="e1">BUTTERFLY</h3>
+        <h4>Price: $12.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e1','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-2.jpg" data-lightbox="earring" data-title="Classy Sapphire Earring"><img src="images/product/Earring2.png" width="200" height="200" alt="Classy Sapphire Earring"/></a>
+        <p>EARRING</p>
+        <h3 id="e2">CLASSY SAPPHIRE</h3>
+        <h4>Price: $9.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e2','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-3.jpg" data-lightbox="earring" data-title="Dazzling Stars Earring"><img src="images/product/Earring3.png" width="200" height="200" alt="Dazzling Stars Earring"/></a>
+        <p>EARRING</p>
+        <h3 id="e3">DAZZLING STARS</h3>
+        <h4>Price: $7.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e3','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-4.jpg" data-lightbox="earring" data-title="Dice Earring"><img src="images/product/Earring4.png" width="200" height="200" alt="Dice Earring"/></a>
+        <p>EARRING</p>
+        <h3 id="e4">FUN DICE</h3>
+        <h4>Price: $2.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e4','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-5.jpg" data-lightbox="earring" data-title="Fan Earring"><img src="images/product/Earring5.png" width="200" height="200" alt="Fan Earring"/></a>
+        <p>EARRING</p>
+        <h3 id="e5">FAN</h3>
+        <h4>Price: $4.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e5','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-6.jpg" data-lightbox="earring" data-title="Musical Note Earring"><img src="images/product/Earring6.png" width="200" height="200" alt="Musical Note Earring"/></a>
+        <p>EARRING</p>
+        <h3 id="e6">MUSICAL NOTE</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e6','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-7.jpg" data-lightbox="earring" data-title="Heart Blossom"><img src="images/product/Earring7.png" width="200" height="200" alt="Heart Blossom"/></a>
+        <p>EARRING</p>
+        <h3 id="e7">HEART BLOSSOM</h3>
+        <h4>Price: $8.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e7','type1')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/E-8.jpg" data-lightbox="earring" data-title="Waterfall"><img src="images/product/Earring8.png" width="200" height="200" alt="Waterfall"/></a>
+        <p>EARRING</p>
+        <h3 id="e8">WATERFALL</h3>
+        <h4>Price: $4.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('e8','type1')">Add To Cart</button>
+      </div>
+    </section>
+    <section class="shop">
+      <h1>HAIR ACCESSORIES</h1>
+      <div class="shopbox"> <a href="images/product/H-1.jpg" data-lightbox="hair" data-title="Pink Polkadot"><img src="images/product/HairAccessory1.png" width="200" height="200" alt="Pink Polkadot"/></a>
+        <p id="type2">HAIR ACCESSORY</p>
+        <h3 id="h1">PINK POLKADOT</h3>
+        <h4>Price: $2.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h1','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-2.jpg" data-lightbox="hair" data-title="Pink Scrunchie"><img src="images/product/HairAccessory2.png" width="200" height="200" alt="Pink Scrunchie with pearls"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h2">PINK SCRUNCHIE</h3>
+        <h4>Price: $2.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h2','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-3.jpg" data-lightbox="hair" data-title="Red Wine"><img src="images/product/HairAccessory3.png" width="200" height="200" alt="Red Wine"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h3">RED WINE</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h3','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-4.jpg" data-lightbox="hair" data-title="Woven Fabric"><img src="images/product/HairAccessory4.png" width="200" height="200" alt="Woven Fabric"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h4">WOVEN FABRIC</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h4','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-5.jpg" data-lightbox="hair" data-title="Merry Christmas"><img src="images/product/HairAccessory5.png" width="200" height="200" alt="MERRY CHRISTMAS"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h5">MERRY CHRISTMAS</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h5','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-6.jpg" data-lightbox="hair" data-title="Black Polkadot"><img src="images/product/HairAccessory6.png" width="200" height="200" alt="Black Polkadot"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h6">BLACK POLKADOT</h3>
+        <h4>Price: $2.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h6','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-7.jpg" data-lightbox="hair" data-title="Lace Flowers"><img src="images/product/HairAccessory7.png" width="200" height="200" alt="Lace Flowers"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h7">LACE FLOWERS</h3>
+        <h4>Price: $4.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h7','type2')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/H-8.jpg" data-lightbox="hair" data-title="Pink Jelly"><img src="images/product/HairAccessory8.png" width="200" height="200" alt="Pink Jelly"/></a>
+        <p>HAIR ACCESSORY</p>
+        <h3 id="h8">PINK JELLY</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('h8','type2')">Add To Cart</button>
+      </div>
+    </section>
+    <section class="shop">
+      <h1>BRACELETS</h1>
+      <div class="shopbox"> <a href="images/product/B-1.jpg" data-lightbox="bracelet" data-title="Blue Owl"><img src="images/product/Bracelet1.png" width="200" height="200" alt="Blue Owl"/></a>
+        <p id="type3">BRACELET</p>
+        <h3 id="b1">BLUE OWL</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('b1','type3')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/B-2.jpg" data-lightbox="bracelet" data-title="Black White"><img src="images/product/Bracelet2.png" width="200" height="200" alt="Black White"/></a>
+        <p>BRACELET</p>
+        <h3 id="b2">BLACK WHITE</h3>
+        <h4>Price: $5.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('b2','type3')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/B-3.jpg" data-lightbox="bracelet" data-title="White Owl"><img src="images/product/Bracelet3.png" width="200" height="200" alt="White Owl"/></a>
+        <p>BRACELET</p>
+        <h3 id="b3">WHITE OWL</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('b3','type3')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/B-4.jpg" data-lightbox="bracelet" data-title="Turquoise Owl"><img src="images/product/Bracelet4.png" width="200" height="200" alt="Turquoise Owl"/></a>
+        <p>BRACELET</p>
+        <h3 id="b4">TURQUOISE OWL</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('b4','type3')">Add To Cart</button>
+      </div>
+    </section>
+    <section class="shop">
+      <h1>NECKLACES</h1>
+      <div class="shopbox"> <a href="images/product/N-1.jpg" data-lightbox="necklace" data-title="Diamond In A Box"><img src="images/product/Necklace1.png" width="200" height="200" alt="Diamond Box"/></a>
+        <p id="type4">NECKLACE</p>
+        <h3 id="n1">DIAMOND IN A BOX</h3>
+        <h4>Price: $8.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('n1','type4')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/N-2.jpg" data-lightbox="necklace" data-title="Triplet Star"><img src="images/product/Necklace2.png" width="200" height="200" alt=""/></a>
+        <p>NECKLACE</p>
+        <h3 id="n2">TRIPLET STAR</h3>
+        <h4>Price: $8.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('n2','type4')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/N-3.jpg" data-lightbox="necklace" data-title="Cute Amethyst"><img src="images/product/Necklace3.png" width="200" height="200" alt="Cute Amethyst"/></a>
+        <p>NECKLACE</p>
+        <h3 id="n3">CUTE AMETHYST</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('n3','type4')">Add To Cart</button>
+      </div>
+      <div class="shopbox"> <a href="images/product/N-4.jpg" data-lightbox="necklace" data-title="Eccentric Blue"><img src="images/product/Necklace4.png" width="200" height="200" alt="Eccentric Blue"/></a>
+        <p>NECKLACE</p>
+        <h3 id="n4">ECCENTRIC BLUE</h3>
+        <h4>Price: $3.90</h4>
+        <button class="btn shopbtn" onclick="AddToCart('n4','type4')">Add To Cart</button>
+      </div>
+    </section>
+    
+    <!--Footer Section-->
+    <footer>
+      <p>Follow us on social media</p>
+      <ul id="footerlist">
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="images/fbicon.png" alt="Facebook icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/communities/107656639828163320669" target="_blank"><img class="socialmedia" src="images/googleplusicon.png" alt="Googlepls Icon"></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img class="socialmedia" src="images/instagramicon.png" alt="Instagram Icon"></a></li>
+      </ul>
+    </footer>
+    <!--Closing div tag for content--> 
+  </div>
+  <!--Closing div tag for container--> 
+</div>
+<script src="lightbox2-master/dist/js/lightbox.js"></script> 
+<!--JS Customization for LightBox--> 
+<script>
+    lightbox.option({
+      'resizeDuration': 300,
+	  'fadeDuration': 200,
+      'wrapAround': true,
+	  'alwaysShowNavOnTouchDevices': true,
+	  'albumLabel': "Product %1 of %2"
+    })
+</script> 
+<script>
+	function AddToCart(prodID, prodType){
+		<!-- Assigning variables -->
+		var pID = prodID;
+		var pType = prodType;
+		
+		<!-- Get element by ID and assigning it -->
+		var product = document.getElementById(pID).innerHTML;
+		var type = document.getElementById(pType).innerHTML;
+		
+		<!-- Display message for user -->
+		alert(product + " " + type + " added to cart.");
+	}
+</script>
+</body>
+</html>

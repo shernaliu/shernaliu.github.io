@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Maxine's Accessories</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<!--Load jQuery & jQuery UI for display effects (Hamburger)-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<!--Load Hamburger JS for Hamburger menu-->
+<script src="hamburger.js"></script>
+
+<!--Load CSS-->
+<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="ResponsiveSlides.js-master/responsiveslides.css">
+
+<!--Load ValidateForm.js-->
+<script src="ValidateForm.js"></script>
+
+<body onLoad="document.subscription.name.focus();">
+<!--This container is used to wrap & obtain width of the entire content-->
+<div id="container"> 
+  <!--Header has the Mobile Navigation (Hamburger) logo, logotext, logo image, and hidden Mobile Nav-->
+  <header>
+    <div class="hamburgerlogo">
+      <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+    <!--The text "Maxine's" will appear only in mobile size --> 
+    <a href="index.html">
+    <div class="logotext">
+      <h2>Maxine's</h2>
+    </div>
+    </a> 
+    
+    <!-- Logo Image and Desktop nav will disappear in mobile size -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="img" alt="logo"></a> </div>
+    
+    <!--Desktop Nav bar-->
+    <ul class="nav">
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </header>
+  
+  <!--Mobile navigation hidden-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </nav>
+  
+  <!--contentLayer is layed over the content, in order to make content unclickable while mobile nav is displayed-->
+  <div id="contentLayer"></div>
+  
+  <!--Site Content starts here-->
+  <div id="content"> 
+    <!--placeholder-->
+    <section class="placeholder">
+      <h6>.</h6>
+    </section>
+    <section class="main">
+      <h1>Subscription form for Maxine's Box</h1>
+      <br>
+      <form name='subscription' onSubmit="return formValidation();" action="thankyou.html" method="post">
+        <ul id="sformlist">
+          <li class="noMargin">
+            <label>Name:</label>
+          </li>
+          <li>
+            <input type="text" name="name" size="30"/>
+          </li>
+          <li class="noMargin">
+            <label>Email:</label>
+          </li>
+          <li>
+            <input type="email" name="email" size="30"/>
+          </li>
+          <li class="noMargin">
+            <label>Phone No:</label>
+          </li>
+          <li>
+            <input type="text" name="phone" size="20"/>
+          </li>
+          <li class="noMargin">
+            <label>Postal Code:</label>
+          </li>
+          <li>
+            <input type="text" name="postalcode" />
+          </li>
+          <li class="noMargin">
+            <label>Salutation:</label>
+          </li>
+          <li>
+            <select name="salutation">
+              <option selected="" value="Default">(Please select one)</option>
+              <option value="Mr">Mr</option>
+              <option value="Ms">Ms</option>
+              <option value="Miss">Miss</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Mdm">Mdm</option>
+            </select>
+          </li>
+          <li class="noMargin">
+            <label>Address:</label>
+          </li>
+          <li>
+          <textarea name="address"></textarea>
+          </li>
+          <li class="noMargin">
+            <label>Please choose 1 or more Maxine Box:</label>
+          </li>
+          <li>
+            <input type="checkbox" name="maxinebox" value="Asymmetry Box" checked/>
+            <span>&nbsp;Asymmetry Box</span></li>
+          <li>
+            <input type="checkbox" name="maxinebox" value="Bedazzling Box" />
+            <span>&nbsp;Bedazzling Box</span></li>
+          <li>
+            <input type="checkbox" name="maxinebox" value="Cutiepie Box" />
+            <span>&nbsp;Cutiepie's Box&nbsp;</span></li>
+          <li>
+            <input type="submit" name="submit" value="Submit" />
+          </li>
+        </ul>
+      </form>
+    </section>
+    
+    <!--Footer Section-->
+    <footer>
+      <p>Follow us on social media</p>
+      <ul id="footerlist">
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="images/fbicon.png" alt="Facebook icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/communities/107656639828163320669" target="_blank"><img class="socialmedia" src="images/googleplusicon.png" alt="Googlepls Icon"></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img class="socialmedia" src="images/instagramicon.png" alt="Instagram Icon"></a></li>
+      </ul>
+    </footer>
+    <!--Closing div tag for content--> 
+  </div>
+  <!--Closing div tag for container--> 
+</div>
+</body>
+</html>

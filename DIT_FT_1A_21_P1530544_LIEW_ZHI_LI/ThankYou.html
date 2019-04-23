@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Maxine's Accessories</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<!--Load jQuery & jQuery UI for display effects (Hamburger)-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<!--Load Hamburger JS for Hamburger menu-->
+<script src="hamburger.js"></script>
+
+<!--Load CSS-->
+<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="ResponsiveSlides.js-master/responsiveslides.css">
+
+<body>
+<!--This container is used to wrap & obtain width of the entire content-->
+<div id="container"> 
+  <!--Header has the Mobile Navigation (Hamburger) logo, logotext, logo image, and hidden Mobile Nav-->
+  <header>
+    <div class="hamburgerlogo">
+      <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+    <!--The text "Maxine's" will appear only in mobile size --> 
+    <a href="index.html">
+    <div class="logotext">
+      <h2>Maxine's</h2>
+    </div>
+    </a> 
+    
+    <!-- Logo Image and Desktop nav will disappear in mobile size -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" class="img" alt="logo"></a> </div>
+    
+    <!--Desktop Nav bar-->
+    <ul class="nav">
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </header>
+  
+  <!--Mobile navigation hidden-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="MaxinesBox.html">Maxine's Box</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Guide.html">Accessoring Guide</a></li>
+    </ul>
+  </nav>
+  
+  <!--contentLayer is layed over the content, in order to make content unclickable while mobile nav is displayed-->
+  <div id="contentLayer"></div>
+  
+  <!--Site Content starts here-->
+  <div id="content"> 
+    <!--placeholder-->
+    <section class="placeholder">
+      <h6>.</h6>
+    </section>
+    <section class="main">
+      <div class="infobox"> <img class="thankyougif" src="images/thankyou.gif" width="300" height="300" alt="Thank You GIF"/>
+        <h1 id="msg1">Thank you for supporting Maxine's Accessories!</h1>
+        <br>
+        <p id="msg2">We wish you a wonderful day.</p>
+        <br>
+      </div>
+    </section>
+    
+    <!--Footer Section-->
+    <footer>
+      <p>Follow us on social media</p>
+      <ul id="footerlist">
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="images/fbicon.png" alt="Facebook icon"></a></li>
+        <li><a href="https://plus.google.com/u/0/communities/107656639828163320669" target="_blank"><img class="socialmedia" src="images/googleplusicon.png" alt="Googlepls Icon"></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img class="socialmedia" src="images/instagramicon.png" alt="Instagram Icon"></a></li>
+      </ul>
+    </footer>
+    <!--Closing div tag for content--> 
+  </div>
+  <!--Closing div tag for container--> 
+</div>
+</body>
+</html>

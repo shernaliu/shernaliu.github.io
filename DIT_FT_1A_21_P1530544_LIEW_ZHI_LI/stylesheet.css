@@ -1,0 +1,491 @@
+@font-face{
+    font-family: 'Aovel Sans Rounded';
+    src: url(fonts/ASansrounded.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Algreya';
+    src: url(fonts/Alegreya-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,li, label{
+	font-family: 'Aovel Sans Rounded', georgia, "times new roman", times, serif;
+}
+
+p{
+	font-size: 1.15em;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+header {
+	border-top: 5px solid hotpink;
+	border-bottom: 5px solid hotpink;
+    background-color: #F2F2F2;
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.placeholder{
+	margin: 0 auto;
+	height: 110px;
+	background: hotpink;
+	}
+
+.img{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 0.5em;
+}
+
+div.logo{
+	display:block;	
+}
+
+div.hamburgerlogo{
+	display: block;
+	float: left;	
+}
+
+div.logotext{
+	display: none;
+	float: right;
+	padding-right: 22px;
+	color: #ee3668;
+}
+
+div.logotext h2{
+	font-family: 'Algreya', georgia, "times new roman", times, serif;
+	font-weight:200;
+}
+
+/* CSS for Hamburger */
+#content {
+    background-color: #FFFFFF;
+    padding: 52px 10px 10px 10px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    -webkit-box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* Hamburger Navigation */
+#hamburger {
+    border: 1px solid hotpink;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 25px;
+    background-color: hotpink ;
+}
+
+/* CSS for white Stripes in Hamburger icon */
+#hamburger div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 3px;
+    width: 90%;
+}
+
+/* Navigation container */
+nav {
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+    width: 70%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #3e3c3d;
+    background: -moz-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3c3d), color-stop(100%, #2d2c2d));
+    background: -webkit-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -o-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -ms-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: linear-gradient(to bottom, #3e3c3d 0%, #2d2c2d 100%);
+}
+
+/* Navigation Style */
+nav ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #444444;
+    padding: 15px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* contentLayer is layed over content to make content unclickable when hamburger menu is shown */
+#contentLayer {
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    z-index: 5;
+}
+
+/* Desktop Navigation bar */
+.nav{
+    border: 3px solid #9E9E9E;
+    border-width: 1px 0 0 0;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+}
+.nav li{
+    display: inline;
+	list-style-type: none;
+	padding: 1%;
+	border-radius: 30px;
+	transition: background-color .8s;
+}
+.nav a{
+    display: inline-block;
+	padding: 0 2%;
+	margin-top: 1px;
+	text-decoration: none;
+	color: #535353;
+	font-size: 18px;
+}
+
+.nav li:hover{
+	background-color: hotpink;
+}
+
+/* Section main */
+section.main{
+	border-top: 1px solid #9E9E9E;
+	margin-top: 10px;
+	padding: 1%;
+	text-align: center;
+}
+
+section.main aside{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+section.main .content{
+	background: no-repeat center top;
+	background-size: 350px;
+	padding-top: 170px;
+	padding-left: 3%;
+	padding-right: 3%;
+	min-height: 200px;
+}
+
+section.main aside .content.shop{
+	background-image:url(images/member.svg);
+}
+
+section.main aside .content.box{
+	background-image:url(images/maxinebox.svg);
+}
+
+section.main aside .content.guide{
+	background-image:url(images/guide.svg);
+}
+
+section::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Shop */
+
+section.shop{
+	border-top: 1px solid #9E9E9E;
+	margin: 2% 2%;
+	padding: 1%;
+	text-align: center;
+}
+
+div.shopbox{
+	width: 22.5%;
+	min-width: 200px;
+	margin: 2% 2% 2% 0;
+	border: 1px solid #9E9E9E;
+	border-top: 5px solid hotpink;
+	border-radius: 7px;	
+	float: left;
+}
+
+/* Maxine's Box */
+div.infobox{
+	background-color: pink;
+	border-radius: 20px;
+}
+
+.guideinfo{
+	padding: 0% 5%;	
+}
+
+/* Footer */
+
+footer{
+	border-top: 1px solid #9E9E9E;
+	padding-top: 10px;
+	background-color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+#footerlist li{
+    display: inline;
+    list-style-type: none;
+    padding: 0% 1% 0% 0%;
+}
+#footerlist a{
+    text-decoration: none;
+}
+
+
+/* Slide Show */
+.rslides {
+  	position: relative;
+  	list-style: none;
+  	overflow: hidden;
+  	width: 98%;
+  	padding: 0;
+  	margin: 0;
+}
+
+.rslides li {
+  	-webkit-backface-visibility: hidden;
+  	position: absolute;
+  	display: none;
+  	width: 100%;
+  	left: 0;
+  	top: 0;
+}
+
+.rslides li:first-child {
+  	position: relative;
+  	display: block;
+  	float: left;
+}
+
+.rslides img {
+  	display: block;
+  	height: auto;
+  	float: left;
+  	width: 100%;
+  	border: 0;
+}
+
+/* Form */
+#sformlist li, #cformlist li{
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+ul#cformlist li.noMargin, ul#sformlist li.noMargin{
+	margin: 0;	
+}
+
+
+[type="submit"], .btn, .close{
+	padding: 1%;
+	margin: 3%;
+	border-radius: 30px;
+	background-color: #F2F2F2;
+	font-size: 1.25em;
+	color: #000000;
+	font-family: 'Aovel Sans Rounded', georgia, "times new roman", 				times, serif;
+	transition: background-color .8s;
+	-moz-box-shadow: 0 0 8px #888;
+	-webkit-box-shadow: 0 0 8px #888;
+	box-shadow: 0 0 8px #888;
+}
+
+.indexbtn{
+	padding: 1% 3%;
+}
+
+.shopbtn{
+	font-size: 0.85em;
+	padding: 1% 3%;
+}
+
+.subscribebtn{
+	padding: 2%;
+}
+
+[type="submit"]:hover, .btn:hover, #subscribebtn:hover{
+	background-color:hotpink;	
+}
+
+textarea{
+	width: 20%;
+	height: 100px;
+	resize: none;
+}
+
+/* Contact Form */
+#popupForm{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.4);
+	overflow: auto;
+	display: none;
+}
+
+div.ForCloseBtn{
+	position: absolute;	
+}
+
+#popupFormBox{
+	background-color: #f2f2f2;
+	border: 1px solid #9E9E9E;
+	border-top: 5px solid hotpink;
+	border-radius: 20px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 8%;
+}
+
+/* ------------------------------------------------ */
+/* Media Query */
+
+/* Google Nexus 10 (Tablet) */
+@media screen and (max-width: 800px){
+header{
+	padding: 1%;	
+}
+	
+	
+/* Display hamburger nav */
+#hamburger{
+	display: block;	
+}
+
+/* Display Maxine's text on the right */
+div.logotext{
+	display: block;	
+}
+
+/* Hide Maxine's Picture Logo */
+div.logo{
+	display:none;	
+}
+
+/* Hide desktop nav */
+ul.nav{
+	display: none;	
+}
+
+/* Reduce size of placeholder */
+.placeholder{
+	height: 0px;	
+}
+
+/* Set aside's width to 100% */
+section.main aside{
+	width: 100%;
+}
+
+/* Set Product boxes' width to 47% */
+div.shopbox{
+	width: 47%;
+}
+
+textarea{
+	width: 40%;
+	height: 100px;
+	resize: none;
+}
+
+}
+
+/* Mobile Size */
+@media screen and (max-width: 420px){
+
+/* Set Product boxes' width to 100% to fit full screen */
+div.shopbox{
+	width: 100%;
+}
+
+img.thankyougif{
+	width: 200px;
+	height:200px;	
+}
+
+textarea{
+	width: 60%;
+	height: 100px;
+	resize: none;
+}
+}
+
+/* For iPhone 6 */
+@media screen and (max-width: 375px){
+textarea{
+	width: 70%;
+	height: 100px;
+	resize: none;
+}		
+}
+
+/* For iPhone 4 */
+@media screen and (max-width: 320px){
+img.thankyougif{
+	width: 100px;
+	height:100px;	
+}
+
+textarea{
+	width: 85%;
+	height: 100px;
+	resize: none;
+}	
+}
